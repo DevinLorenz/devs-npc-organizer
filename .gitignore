@@ -1,3 +1,8 @@
 /node_modules
 
 .env
+
+/serviceAccountKeys.json
+
+/db.js
+/database.rules.json

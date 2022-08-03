@@ -4,23 +4,23 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link ref="stylesheet" href="home.css">
-    <title>Add</title>
+    <link ref="stylesheet" href="styles.css">
+    <title>Dev's NPC Organizer - Add</title>
 </head>
 <body>
     <header>
         <div class="directory">
-            
-            
-                
-                <a class="directory-home" href="./home.html">Home</a> |
-                <a class="directory-addpage" href="add.html">Create</a> |
-
-        <h2>Create your Realm</h2>
-
+            <button><a class="directory-home" href="./home.html">Dev's NPC Organizer</a></button>
+             |
+            <button><a class="directory-addpage" href="./add.html">Age of Creation</a></button>
+             |
+            <button><a class="directory-collection" href="./collection.html">My Collections</a></button>
+        </div>
     </header>
-        
 
+        <h2>This is set aside in here for easier pickings later</h2>
+        
+<span>
     <div class="container">       
         <div class="realm-card">
              <div class="card-body">
@@ -28,21 +28,20 @@
                      <div class="realm-name">
                          <label for="realm-name">Realm Name:</label>
                          <input type="text" id="realm" name="realm-name" placeholder="Enter a new realm name">
-                         <button type="button" class="randomBtn" id="realm-name-random">Random Realm Name</button>
+                         <button type="button" class="randomizeBtn" id="realm-name-randomize">Randomize Realm Name</button>
                      </div>
                      <div>
                          <label for="realm-notes">Notes:</label>
                          <textarea id="realm-notes" name="realm-notes" placeholder="Enter notes about the realm"></textarea>
                      </div>
-                     <button type="submit" class="saveBtn">Save Realm</button>
+                     <button type="submit" class="saveBtn">Generate Realm</button>
                  </form>
              </div>
          </div>
      </div>
-
-    <div>
-        <h1></h1>
-    </div>
+    </span>
+<span>
+    
 
     <div class="container">       
        <div class="continent-card">
@@ -51,24 +50,22 @@
                     <div class="continent-name">
                         <label for="continent-name">Continent Name:</label>
                         <input type="text" id="continent-name" name="continent-name" placeholder="Enter a new continent name">
-                        <button type="button" class="randomBtn" id="continent-name-random">Random Continent Name</button>
+                        <button type="button" class="randomizeBtn" id="continent-name-randomize">Randomize Continent Name</button>
                     </div>
                     <div>
                         <label for="continent-notes">Notes:</label>
                         <textarea id="continent-notes" name="continent-notes" placeholder="Enter notes about the continent"></textarea>
                     </div>
-                    <button type="submit" class="saveBtn">Save Continent</button>
+                    <button type="submit" class="saveBtn">Generate Continent</button>
                 </form>
             </div>
         </div>
     </div>
+</span>
 
+   <hr></hr>
 
-
-    <div>
-        <h1></h1>
-    </div>
-
+<span>
     <div class="container">       
        <div class="town-card">
             <div class="card-body">
@@ -76,25 +73,22 @@
                     <div class="town-name">
                         <label for="town-name">Town Name:</label>
                         <input type="text" id="town-name" name="town-name" placeholder="Enter a new town name">
-                        <button type="button" class="randomBtn" id="town-name-random">Random Town Name</button>
+                        <button type="button" class="randomizeBtn" id="town-name-randomize">Randomize Town Name</button>
                     </div>
                     <div>
                         <label for="town-notes">Notes:</label>
                         <textarea id="town-notes" name="town-notes" placeholder="Enter notes about the town"></textarea>
                     </div>
-                    <button type="submit" class="saveBtn">Save Town</button>
+                    <button type="submit" class="saveBtn">Generate Town</button>
                 </form>
             </div>
         </div>
     </div>
+</span>
 
+<hr></hr>
 
-
-    <div>
-        <h1></h1>
-    </div>
-    
-    
+<span>
     <div class="container">
         <div class="npc-card">
             <div class="card-body">
@@ -103,7 +97,7 @@
                         <label for="npc-name">NPC Name:</label>
                         <input type="text" id="npm-name" placeholder="Enter a new NPC name">
                         
-                        <button type="button" class="randomBtn" id="random-name">Random Name</button>
+                        <button type="button" class="randomizeBtn" id="randomize-name">Randomize Name</button>
                     </div>
 
 
@@ -122,7 +116,7 @@
                             <option class="races" id="race8">Gnome</option>
                             <option class="races" id="race9">Tiefling</option>   
                         </select>        
-                        <button type="button" class="randomBtn" id="random-race">Random Race</button>
+                        <button type="button" class="randomizeBtn" id="randomize-race">Randomize Race</button>
                     </div>
                     <div>
                         <label for="npc-gender">NPC Gender:</label>
@@ -132,7 +126,7 @@
                             <option class="genders" id="gender2">Male</option>
                             <option class="genders" id="gender3">Female</option>                           
                         </select>
-                        <button type="button" class="randomBtn" id="random-race">Random Gender</button>
+                        <button type="button" class="randomizeBtn" id="randomize-race">Randomize Gender</button>
                     </div>
                     <div>
                         <label for="npc-occupation">NPC Occupation:</label>
@@ -156,17 +150,16 @@
                             <option class="occupations" id="occupation16">Librarian</option>
                             <option class="occupations" id="occupation17">Petty Theif</option>
                         </select>
-                        <button type="button" class="randomBtn" id="random-occupation">Random Occupation</button>
+                        <button type="button" class="randomizeBtn" id="randomize-occupation">Randomize Occupation</button>
                     </div>
                     <div>
                         <label for="npc-occupation-add">Add New Occupation:</label>
                         <input type="text" id="npc-occupation-add" placeholder="Enter a new occupation">
-                        <button type="button" class="addBtn" id="random-occupation-add">Add</button>
+                        <button type="button" class="addBtn" id="randomize-occupation-add">Add</button>
                     </div>
                 </form>
                 <div>
-                    <label for="random-all-npc"></label>
-                    <button type="button" class="randomBtn" id="random-all-npc">Random All</button>
+                    <label for="randomize-all-npc"></label>
                 </div>               
             </div>
             <div>
@@ -178,42 +171,65 @@
                     <div id="strength">
                         <label for="npc-strength">Strength:</label>
                         <input type="text" id="npc-strength" placeholder="Enter Strength">
-                        <button type="button" class="randomBtn" id="random-strength">Random Strength</button>
+                        <button type="button" class="randomizeBtn" id="randomize-strength">Randomize Strength</button>
                     </div>
                     <div id="dexterity">
                         <label for="npc-dexterity">Dexterity:</label>
                         <input type="text" id="npc-dexterity" placeholder="Enter Dexterity">
-                        <button type="button" class="randomBtn" id="random-dexterity">Random Dexterity</button>
+                        <button type="button" class="randomizeBtn" id="randomize-dexterity">Randomize Dexterity</button>
                     </div>
                     <div id="constitution">
                         <label for="npc-constitution">Constitution:</label>
                         <input type="text" id="npc-constitution" placeholder="Enter Constitution">
-                        <button type="button" class="randomBtn" id="random-constitution">Random Constitution</button>
+                        <button type="button" class="randomizeBtn" id="randomize-constitution">Randomize Constitution</button>
                     </div>
                     <div id="intelligence">
                         <label for="npc-intelligence">Intelligence:</label>
                         <input type="text" id="npc-intelligence" placeholder="Enter Intelligence">
-                        <button type="button" class="randomBtn" id="random-intelligence">Random Intelligence</button>
+                        <button type="button" class="randomizeBtn" id="randomize-intelligence">Randomize Intelligence</button>
                     </div>
                     <div id="wisdom">
                         <label for="npc-wisdom">Wisdom:</label>
                         <input type="text" id="npc-wisdom" placeholder="Enter Wisdom">
-                        <button type="button" class="randomBtn" id="random-wisdom">Random Wisdom</button>
+                        <button type="button" class="randomizeBtn" id="randomize-wisdom">Randomize Wisdom</button>
                     </div>
                     <div id="charisma">
                         <label for="npc-charisma">Charisma:</label>
                         <input type="text" id="npc-charisma" placeholder="Enter Charisma">
-                        <button type="button" class="randomBtn" id="random-charisma">Random Charisma</button>
+                        <button type="button" class="randomizeBtn" id="randomize-charisma">Randomize Charisma</button>
                     </div>
+                    <div>
+                        <label for="npc-hp">Hit Points:</label>
+                        <input type="text" id="npc-hp" placeholder="HP">
+                        <button type="button" class="hpButton" id="hp-plus">+</button>
+                        <input type="text" id="npc-hp" placeholder="+ or - Hit Points">
+                        <button type="button" class="hpButton" id="hp-minus">-</button>
+                    </div>
+                    <div>
+                        <label for="npc-ac">Armor Class:</label>
+                        <input type="text" id="npc-ac" placeholder="AC">
                 </div>
+                <div>
+                    <label for="npc-lang-and-prof">Languages and Proficiencies:</label>
+                    <input type="text" id="npc-lang-and-prof" placeholder="Enter Languages and Proficiencies">
+                    <button type="button" class="randomizeBtn" id="randomize-lang-and-prof">Randomize</button>
+                </div>
+                <div>
+                    <label for="npc-background">Background:</label>
+                    <textarea id="npc-background" placeholder="Enter Background"></textarea>
+                    <button type="button" class="randomizeBtn" id="randomize-background">Randomize</button>
+                </div>
+                <div>
+                    <label for="npc-physical-desc">Physical Description:</label>
+                    <textarea id="npc-physical-desc" placeholder="Enter Physical Description"></textarea>
+                    <button type="button" class="randomizeBtn" id="randomize-physical-desc">Randomize</button>
+                </div>
+                <button type="button" class="randomizeBtn" id="randomize-all-npc">Randomize All</button>
             </div>
-        
-        
-            <button type="submit" class="saveBtn">Save NPC</button>
+            <button type="submit" class="saveBtn">Generate NPC</button>
         </div>
     </div>
-    
-
+</span>    
 
     <script src="add.js"></script>
 </body>
