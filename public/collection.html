@@ -4,21 +4,48 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link ref="stylesheet" href="styles.css">
+    <link rel="stylesheet" type="text/css" href="./stylings/styles-collection.css"/>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Gulzar&display=swap" rel="stylesheet">
     <title>Dev's NPC Organizer - Collection</title>
 </head>
 <body>
-    <header>
-        <div class="directory">
-            <button><a class="directory-home" href="./home.html">Dev's NPC Organizer</a></button>
-             |
-            <button><a class="directory-addpage" href="./add.html">Age of Creation</a></button>
-             |
-            <button><a class="directory-collection" href="./collection.html">My Collections</a></button>
-        </div>
-    </header>
-    <h2>Your Collections</h2>
+    <div class="container">
+        <header>
+            <div class="directory">
+                <a class="directory-home" href="./home.html"><button id="home-btn">Dev's NPC Organizer</button></a>
+                
+            <div id="userbtns">
+                <button class="userbtns" id="register">Register</button>
+                <button class="userbtns" id="login">Login</button>
+            </div>
 
+            </div>
+            <hr id="black-top-divider"></hr>
+        </header>
+        
+        <div class="collection-info">
+            <div class="collection-text">
+                <hr id="collection-box"></hr>
+                <h2 id="welcome-text">
+                    My Collections:
+                </h2>
+            <ul>
+                
+            </ul>
+        </div>
+    </div>
+    <div class="collection-bottom">
+        <div id="contact-me">
+            <hr id="contact-line"></hr>
+            <h3 id="contact-title">Contact Us:</h3>
+            <div><h3 id="contact-email">Email: <a href="mailto:devinlorenz.work@gmail.com"> devinlorenz.work@gmail.com</a></h3></div>
+        </div>    
+    </div>
+</div>
+
+    
     <script src="./collection.js"></script>
 </body>
 </html>

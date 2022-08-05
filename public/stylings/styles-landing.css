@@ -1,0 +1,138 @@
+* {
+    font-family: 'Gulzar', serif;
+}
+
+html {
+    background-color: #1c1c1c;
+}
+
+.container {
+    padding-top: 10px;
+    padding-bottom: 10px;
+    background-color: #353535;
+    max-width: 90%;
+    min-width: 90%;
+    margin-left: 15px;
+    margin-right: 15px;
+    padding-bottom: 50px;
+    padding-left: 10px;
+    padding-right: 10px;
+    align-self: center;
+}
+
+body {
+    display: flex;
+    flex-direction: column;
+    position: relative;
+    margin: 10px;
+}
+
+.directory {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+}
+
+#home-btn {
+    background-color: #5F5F5F;
+    border: none;
+    color: white;
+    width: 350px;
+    height: 100px;
+    font-size: 35px;
+    text-align: center;
+}
+
+.userbtns {
+    background-color: #5F5F5F;
+    border: none;
+    color: white;
+    width: 100px;
+    height: 50px;
+    font-size: 20px;
+    text-align: center;
+}
+
+
+
+#black-top-divider {
+    background-color: #1c1c1c;
+    height: 10px;
+    border: none;
+}
+
+/* -------------------------------- */
+
+
+
+
+/* Syling for Landing page v */
+
+.landing-info {
+    font-size: large;
+    text-align: center;
+    padding-top: -15px;
+    background-color: #b3b3b3;
+    padding-bottom: 30px;
+}
+
+.landing-text {
+
+    border-top: rgb(0, 71, 255, .49) solid 50px;
+    
+    background-color: #d9d9d9;
+    margin-top: 10px;
+    margin-left: 20px;
+    margin-right: 20px;
+    padding: 15px;
+    
+    padding-top: -15px;
+    position: relative;
+    top: 15px;
+    
+}
+
+#landing-box {
+    height: 5px;
+    background-color: #1c1c1c;
+    border: none;
+    margin-left: -15px;
+    margin-right: -15px;
+    position: relative;
+    top: -24px;
+}
+
+#welcome-text {
+    position: relative;
+    top: -105px;
+    
+}
+
+#appDesc {
+    position: relative;
+    top: -110px;
+    font-size: larger;
+    line-height: 30px;
+    margin-left: 200px;
+    margin-right: 200px;
+}
+
+
+.landing-bottom {
+    border:#b3b3b3 solid 10px;
+    background-color: #d9d9d9;
+    padding: 50px;
+    height: 70px;
+    padding-top: 15px;
+    margin-left: 20vw;
+    margin-right: 20vw;
+    text-align: center;
+    
+    display: flex;
+    justify-content: center;
+    position: relative;
+    top: 30px;
+}
+
+
+
