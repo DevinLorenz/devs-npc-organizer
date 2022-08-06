@@ -48,7 +48,7 @@ body {
     border: none;
     color: white;
     width: 100px;
-    height: 50px;
+    height: 40px;
     font-size: 20px;
     text-align: center;
 }
@@ -112,6 +112,26 @@ body {
     position: relative;
     top: -110px;
     font-size: larger;
+    line-height: 30px;
+    margin-left: 200px;
+    margin-right: 200px;
+}
+
+.get-started {
+    text-align: center;
+    font-size: larger;
+    position: relative;
+    top: -50px;
+    line-height: 30px;
+    margin-left: 200px;
+    margin-right: 200px;
+}
+
+.work-in-prog {
+    text-align: center;
+    font-size: larger;
+    position: relative;
+    top: 0px;
     line-height: 30px;
     margin-left: 200px;
     margin-right: 200px;
