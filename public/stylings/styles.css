@@ -59,7 +59,6 @@ body {
 .navbar {
     overflow: hidden;
     background-color: #1c1c1c;
-    font-family: Arial;
     display: flex;
     flex-direction: row;
     justify-content: flex-end;
@@ -90,15 +89,13 @@ body {
     outline: none;
     color: white;
     background-color: inherit;
-    font-family: inherit; 
     margin: 0; 
     
   }
   
 
   .navbar a:hover, .dropdown:hover .dropbtn {
-    background-color: rgb(108, 143, 233);
-    
+    background-color: rgb(108, 143, 233);    
   }
   
 
@@ -159,7 +156,7 @@ body {
     margin-top: 10px;
     margin-left: 20px;
     margin-right: 20px;
-    padding: 15px;
+    padding: 65px;
     
     padding-top: -15px;
     position: relative;
@@ -171,10 +168,10 @@ body {
     height: 5px;
     background-color: #1c1c1c;
     border: none;
-    margin-left: -15px;
-    margin-right: -15px;
+    margin-left: -65px;
+    margin-right: -65px;
     position: relative;
-    top: -24px;
+    top: -75px;
     
 }
 
@@ -191,10 +188,22 @@ body {
     display: flex;
     justify-content: center;
     text-align: center;
-    margin-top: 20px;
-    
-    
+    margin-top: 20px; 
 }
+
+.add-realm-btn {
+    background-color: rgb(108, 143, 233);
+    border: none;
+    width: 200px;
+    height: 50px;
+    font-size: 20px;
+    text-align: center;
+    position: relative;
+    top: 55px;
+}
+
+
+
 
 #contact-me {
     background-color: #d9d9d9;
@@ -246,11 +255,12 @@ body {
 .background-box {
     font-size: large;
     text-align: center;
-padding-top: 5px;
+    padding-top: 5px;
     background-color: #b3b3b3;
     margin-top: 27px;
     border: none;
-    min-height: 600px;
+    min-height: 575px;
+    max-height: fit-content;
 }
 
 .news-box {
@@ -260,13 +270,14 @@ padding-top: 5px;
     background-color: #d9d9d9;
     padding-bottom: 10px;
     margin-top: 27px;
-    border-top:rgb(108, 143, 233) solid 30px;
+    border-top:rgb(108, 143, 233) solid 40px;
     width: 400px;
     height: 500px;
     max-width: 40%;
     padding-left: 15px;
     padding-right: 15px;
     margin: 10px;
+    margin-left: 20px;
     position: absolute;
     display: flex;
     flex-direction: column;
@@ -274,7 +285,7 @@ padding-top: 5px;
 
 .news-title {
     position: relative;
-    top: -38px;
+    top: -43px;
     text-align: center;
     font-size: larger;
 }
@@ -287,7 +298,7 @@ padding-top: 5px;
     position: absolute;
     top: -10px;
     left: 0px;
-
+z-index: 1;
 }
 
 .news-text {
@@ -297,7 +308,84 @@ padding-top: 5px;
     font-size: medium;
     padding-left: 15px;
     padding-right: 15px;
-    padding-bottom: 10px;
+    padding-bottom: 20px;
     overflow-y: scroll;
     height: 490px;
+}
+
+
+
+
+
+
+
+
+
+
+.get-started {
+    text-align: center;
+    font-size: larger;
+    position: relative;
+    top: -50px;
+    line-height: 30px;
+    margin-left: 200px;
+    margin-right: 200px;
+}
+
+.work-in-prog {
+    text-align: center;
+    font-size: larger;
+    position: relative;
+    top: 0px;
+    line-height: 30px;
+    margin-left: 200px;
+    margin-right: 200px;
+}
+
+#landing-box {
+    height: 5px;
+    background-color: #1c1c1c;
+    border: none;
+    margin-left: -65px;
+    margin-right: -65px;
+    position: relative;
+    top: -75px;
+}
+
+#welcome-text {
+    position: relative;
+    top: -160px;
+    
+}
+
+#appDesc {
+    position: relative;
+    top: -110px;
+    font-size: larger;
+    line-height: 30px;
+    margin-left: 200px;
+    margin-right: 200px;
+}
+.landing-info {
+    font-size: large;
+    text-align: center;
+    padding-top: -15px;
+    background-color: #b3b3b3;
+    padding-bottom: 10px;
+}
+
+.landing-text {
+
+    border-top: rgb(0, 71, 255, .49) solid 50px;
+    
+    background-color: #d9d9d9;
+    margin-top: 10px;
+    margin-left: 20px;
+    margin-right: 20px;
+    padding: 65px;
+    
+    padding-top: -15px;
+    position: relative;
+    top: 15px;
+    
 }
