@@ -2,17 +2,22 @@ const express = require('express');
 const cors = require('cors');
 const app = express();
 const path = require('path');
-require('dotenv').config();
+
+
 
 app.use(express.static('public'));
 
 app.use(express.json());
 app.use(cors());
 
-
 app.get('/', (req, res) => {
     res.sendFile(path.join(__dirname, '../public/landing.html'));
 })
+
+
+const { seed } = require('./db');
+
+app.post('/seed', seed)
 
 
 

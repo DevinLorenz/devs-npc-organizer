@@ -4,7 +4,7 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" type="text/css" href="../stylings/styles.css"/>
+    <link rel="stylesheet" type="text/css" href="../../stylings/styles.css"/>
     <link rel="preconnect" href="https://fonts.googleapis.com">
 <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
 <link href="https://fonts.googleapis.com/css2?family=Gulzar&display=swap" rel="stylesheet">
@@ -21,8 +21,8 @@
             </div>
                 <div class="black-top-divider" id="userbtns">
                     <div class="navbar">
-                        <a href="./home.html">Home</a>
-                        <a href="./collections.html">My Collections</a>
+                        <a href="../home.html">Home</a>
+                        <a href="../collections.html">My Collections</a>
                         <div class="flex-container">    
                             <div class="dropdown">
                                 <button class="dropbtn">Welcome Back!
@@ -30,32 +30,34 @@
                                 </button>
                                 
                                 <div class="dropdown-content">
-                                    <a href="./user-account.html">My Account</a>
-                                    <a href="../landing.html">Sign Out</a>
+                                    <a href="../user-account.html">My Account</a>
+                                    <a href="../../landing.html">Sign Out</a>
                                 </div>
                             </div>
                         </div>
                     </div>
                 </div>
             </header>
-            
-            <div class="collection-info">
-                <div class="collection-text">
-                    <hr id="collection-box"></hr>
-                    <h2 id="welcome-text">
-                        My Collections:
-                    </h2>
-                    <ul class="realms-list">
+            <div class="background-box-realm">
+                    <div class="realm-text">
+                <hr id="realm-box">
+                <form>
+                    <div class="realm-name">
                         
-                    </ul>
+                        <input type="text" id="realm" name="realm-name" placeholder="Name your Town">
+                        <button type="button" class="randomizeBtn" id="realm-name-randomize">Randomize</button>
+                    </div>
+                    <div>
+                        
+                        <textarea id="realm-notes" name="realm-notes" placeholder="(optional) Notes about your Town"></textarea>
+                    </div>
+                    <button type="submit" class="saveBtn">Create Town</button>
                     
-                    <a  href="../signed-in/displays/create-realm.html">
-                        <button class="add-realm-btn">Create Realm</button></a>
+                    </form>
                 </div>
             </div>
-        </div>
 
-    
-    <script src="./collections.js"></script>
-</body>
+        </div>
+    </body>
 </html>
+

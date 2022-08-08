@@ -36,7 +36,7 @@ body {
 #home-btn {
     background-color: #5F5F5F;
     border: none;
-    color: white;
+    color: #f9f9f9;
     width: 300px;
     height: 100px;
     font-size: 35px;
@@ -47,7 +47,7 @@ body {
 .userbtns {
     background-color: #1c1c1c;
     border: none;
-    color: white;
+    color: #f9f9f9;
     width: 80px;
     height: 30px;
     font-size: 15px;
@@ -69,7 +69,7 @@ body {
   .navbar a {
     float: left;
     font-size: 20px;
-    color: white;
+    color: #f9f9f9;
     text-align: center;
     padding-left: 40px;
     padding-right: 40px;
@@ -87,7 +87,7 @@ body {
     font-size: 20px;
     border: none;
     outline: none;
-    color: white;
+    color: #f9f9f9;
     background-color: inherit;
     margin: 0; 
     
@@ -192,14 +192,19 @@ body {
 }
 
 .add-realm-btn {
-    background-color: rgb(108, 143, 233);
+    background-color: #1c1c1c;
     border: none;
+    color:#f9f9f9;
     width: 200px;
     height: 50px;
     font-size: 20px;
     text-align: center;
     position: relative;
     top: 55px;
+}
+
+.add-realm-btn:hover {
+    background-color: rgb(108, 143, 233);
 }
 
 
@@ -235,7 +240,7 @@ body {
 #collection-btn {
     background-color: #5F5F5F;
     border: none;
-    color: white;
+    color: #f9f9f9;
     min-width: 60%;
     max-width: 80%;
     height: 100px;
@@ -298,7 +303,7 @@ body {
     position: absolute;
     top: -10px;
     left: 0px;
-z-index: 1;
+    z-index: 1;
 }
 
 .news-text {
@@ -386,6 +391,116 @@ z-index: 1;
     
     padding-top: -15px;
     position: relative;
+    top: -5px;
+    
+}
+
+
+
+
+
+
+
+.randomizeBtn {
+    background-color: #1c1c1c;
+    border: none;
+    color:#f9f9f9;
+    width: 100px;
+    height: 41.5px;
+    font-size: 15px;
+    text-align: center;
+    position: relative;
+    top: 1px;
+}
+
+.randomizeBtn:hover {
+    background-color: rgb(108, 143, 233);
+}
+
+#realm {
+    border: none;
+    height: 39px;
+}
+
+#realm-notes {
+    border: none;
+    min-height: 210px;
+    max-height: 210px;
+    max-width: 600px;
+    min-width: 600px;
+    line-height: normal;
+    font-size: small;
+    scrollbar-color: #1c1c1c;
+}
+
+.saveBtn {
+    background-color: #1c1c1c;
+    border: none;
+    color:#f9f9f9;
+    width: 100px;
+    height: 42px;
+    font-size: 15px;
+    text-align: center;
+}
+
+.saveBtn:hover {
+    background-color: rgb(108, 143, 233);
+}
+
+
+.black-top-divider {
+    background-color: #1c1c1c;
+    margin-top: 10px;
+    height: 40px;
+    border: none;
+    padding-top: -10px;
+}
+
+.background-box-realm {
+    font-size: large;
+    text-align: center;
+    padding-top: 5px;
+    background-color: #b3b3b3;
+    margin-top: 27px;
+    border: none;
+    min-height: 575px;
+    max-height: fit-content;
+}
+
+.realm-info {
+    font-size: large;
+    text-align: center;
+    padding-top: -15px;
+    background-color: #b3b3b3;
+    padding-bottom: 60px;
+    margin-top: 27px;
+    margin-bottom: 60px;
+    height: 20px;
+}
+
+.realm-text {
+
+    border-top: rgb(108, 143, 233) solid 50px;
+    
+    background-color: #d9d9d9;
+    margin-top: 10px;
+    margin-left: auto;
+    margin-right: auto;
+    padding: 65px;
+    max-width: 600px;
+    padding-top: -15px;
+    position: relative;
     top: 15px;
+    
+}
+
+#realm-box {
+    height: 5px;
+    background-color: #1c1c1c;
+    border: none;
+    margin-left: -65px;
+    margin-right: -65px;
+    position: relative;
+    top: -75px;
     
 }
