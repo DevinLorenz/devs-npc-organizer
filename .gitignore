@@ -2,7 +2,4 @@
 
 .env
 
-/serviceAccountKeys.json
-
 /db.js
-/database.rules.json

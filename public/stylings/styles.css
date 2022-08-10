@@ -4,16 +4,17 @@
 
 html {
     background-color: #1c1c1c;
+    
 }
 
 .container {
     padding-top: 10px;
     padding-bottom: 10px;
     background-color: #353535;
-    max-width: 90%;
-    min-width: 90%;
-    margin-left: 15px;
-    margin-right: 15px;
+    max-width: 10000px;
+    min-width: 1100px;
+    margin-left: auto;
+    margin-right: auto;
     padding-bottom: 50px;
     padding-left: 10px;
     padding-right: 10px;
@@ -502,5 +503,247 @@ body {
     margin-right: -65px;
     position: relative;
     top: -75px;
+    
+}
+
+
+
+.realm-list {
+    background-color: #f9f9f9;
+    border: none;
+    margin-left: auto;
+    margin-right: auto;
+    position: relative;
+    top: -100px;
+    width: 200px;
+    padding-top: 10px;
+    padding-bottom: 10px;
+    display: flex;
+    justify-content: space-around;
+    justify-content: end;
+}
+
+.realm-card {
+    width: 500px;
+    height: 100px;
+    margin-left: auto;
+    margin-right: auto;
+    margin-top: 10px;
+    margin-bottom: 10px;
+    border: none;
+    background-color: #f9f9f9;
+    border-radius: 10px;
+    padding: 10px;
+    position: relative;
+    top: -100px;
+    text-align: center;
+    align-items: flex-start;
+}
+
+.view-realm-button  {
+    width: 100px;
+    height: 40px;
+    border: none;
+    background-color: #1c1c1c;
+    color: #f9f9f9;
+}
+
+.view-realm-button:hover {
+    background-color: rgb(108, 143, 233);
+} 
+
+.add-region-button  {
+    width: 100px;
+    height: 40px;
+    border: none;
+    background-color: #1c1c1c;
+    color: #f9f9f9;
+}
+
+.add-region-button:hover {
+    background-color: rgb(108, 143, 233);
+} 
+
+
+
+
+
+
+#region {
+    border: none;
+    height: 39px;
+}
+
+#region-notes {
+    border: none;
+    min-height: 210px;
+    max-height: 210px;
+    max-width: 600px;
+    min-width: 600px;
+    line-height: normal;
+    font-size: small;
+    scrollbar-color: #1c1c1c;
+}
+
+.background-box-region {
+    font-size: large;
+    text-align: center;
+    padding-top: 5px;
+    background-color: #b3b3b3;
+    margin-top: 27px;
+    border: none;
+    min-height: 575px;
+    max-height: fit-content;
+}
+
+.region-info {
+    font-size: large;
+    text-align: center;
+    padding-top: -15px;
+    background-color: #b3b3b3;
+    padding-bottom: 60px;
+    margin-top: 27px;
+    margin-bottom: 60px;
+    height: 20px;
+}
+
+.region-text {
+
+    border-top: rgb(108, 143, 233) solid 50px;
+    
+    background-color: #d9d9d9;
+    margin-top: 10px;
+    margin-left: auto;
+    margin-right: auto;
+    padding: 65px;
+    max-width: 600px;
+    padding-top: -15px;
+    position: relative;
+    top: 15px;
+    
+}
+
+#region-box {
+    height: 5px;
+    background-color: #1c1c1c;
+    border: none;
+    margin-left: -65px;
+    margin-right: -65px;
+    position: relative;
+    top: -75px;
+    
+}
+
+
+
+
+
+.selector-box {
+    font-size: large;
+    text-align: center;
+    padding-top: 5px;
+    background-color: #b3b3b3;
+    margin-top: 27px;
+    border: none;
+    min-height: 575px;
+    max-height: fit-content;
+    margin-left: 0px;
+    width: 40%;
+    float: left;
+}
+
+#select-box-line{
+    height: 6px;
+    width: 95%;
+    border: none;
+    background-color: #1c1c1c;
+    color: #1c1c1c;
+    position: relative;
+    top: 115px;
+    z-index: 1;
+}
+
+#region-select {
+    border-left:rgb(108, 143, 233) solid 10px;
+    height: 50px;
+    width: 45%;
+    margin-left: -220px;
+    right: -40px;
+}
+
+#town-select {
+    border-right:rgb(108, 143, 233) solid 10px;
+    height: 50px;
+    width: 45%;
+    margin-right: -300px;
+    position: relative;
+    top: -50px;
+    left: -40px;
+    
+}
+
+#npc-create-btn {
+    width: 95%;
+    height: 55px;
+    border: none;
+    background-color: #1c1c1c;
+    margin-left:auto;
+    margin-right:auto;
+    color: #f9f9f9;
+    font-size: larger;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    justify-content: center;
+    margin-bottom: 10px;
+    position: relative;
+    top: -15px
+}
+
+#npc-create-btn:hover {
+    
+    background-color: rgb(108, 143, 233);
+}
+
+#npc-selector {
+    width: 95%;
+    height: 400px;
+    border-top:rgb(108, 143, 233) solid 40px;
+    background-color: #f9f9f9;
+    padding-bottom: 10px;
+    margin-left:auto;
+    margin-right:auto;
+    margin-bottom: -10px;
+    color: #1c1c1c;
+    font-size: larger;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    justify-content: center;
+    overflow-y: hidden scroll;
+    position: relative;
+    top: -40px;
+}
+
+#npc-title {
+    position: relative;
+    top: -190px;
+}
+
+
+
+
+.display-box {
+    background-color: #b3b3b3;
+    margin-top: 27px;
+    border: none;
+    min-height: 635px;
+    max-height: fit-content;
+    margin-right: 0px;
+    width: 55%;
+    float: left;
+    margin-left: 5%;
     
 }

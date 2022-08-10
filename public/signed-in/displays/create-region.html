@@ -8,7 +8,7 @@
     <link rel="preconnect" href="https://fonts.googleapis.com">
 <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
 <link href="https://fonts.googleapis.com/css2?family=Gulzar&display=swap" rel="stylesheet">
-    <title>DNO - My Collections</title>
+    <title>DNO - Add Region</title>
 </head>
 <body>
     <div class="container">
@@ -21,8 +21,8 @@
             </div>
                 <div class="black-top-divider" id="userbtns">
                     <div class="navbar">
-                        <a href="../home.html">Home</a>
-                        <a href="../collections.html">My Collections</a>
+                        <a class="homeBTN" href="../home.html">Home</a>
+                        <a class="collectionsBTN" href="../collections.html">My Collections</a>
                         <div class="flex-container">    
                             <div class="dropdown">
                                 <button class="dropbtn">Welcome Back!
@@ -38,26 +38,29 @@
                     </div>
                 </div>
             </header>
-            <div class="background-box-realm">
-                    <div class="realm-text">
-                <hr id="realm-box">
+            <div class="background-box-region">
+                    <div class="region-text">
+                <hr id="region-box">
                 <form>
-                    <div class="realm-name">
+                    <div class="region-name">
                         
-                        <input type="text" id="realm" name="realm-name" placeholder="Name your Region">
-                        <button type="button" class="randomizeBtn" id="realm-name-randomize">Randomize</button>
+                        <input type="text" id="region" name="region-name" placeholder="Name your Region">
+                        <button type="button" class="randomizeBtn" id="region-name-randomize">Randomize</button>
                     </div>
                     <div>
                         
-                        <textarea id="realm-notes" name="realm-notes" placeholder="(optional) Notes about your Region"></textarea>
+                        <textarea id="region-notes" name="region-notes" placeholder="(optional) Notes about your Region"></textarea>
                     </div>
-                    <button type="submit" class="saveBtn">Create Region</button>
+                    <button type="submit" class="saveBtn" id="generate-region">Create Region</button>
                     
                     </form>
                 </div>
             </div>
 
+
         </div>
+        <script src="https://cdn.jsdelivr.net/npm/axios/dist/axios.min.js"></script>
+        <script src="../../scripts/region-generation.js"></script>
     </body>
 </html>
 

@@ -3,9 +3,12 @@ const cors = require('cors');
 const app = express();
 const path = require('path');
 
-
+const { seed } = require('./db');
+const { makeRealm, getRealms, makeRegion } = require('./controller');
 
 app.use(express.static('public'));
+
+
 
 app.use(express.json());
 app.use(cors());
@@ -15,9 +18,12 @@ app.get('/', (req, res) => {
 })
 
 
-const { seed } = require('./db');
+
 
 app.post('/seed', seed)
+app.post('/realm', makeRealm)
+app.get('/realm', getRealms)
+app.post('/realm/region', makeRegion)
 
 
 
