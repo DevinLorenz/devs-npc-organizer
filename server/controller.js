@@ -135,20 +135,34 @@ makeRealm : (req,res) => {
                                 .catch((err) => console.log(err))
                             },
 
-                            // getNPC : (req,res) => {
-                            //     const { town_id } = req.params;
-                            //     sequelize
-                            //         .query(
-                            //             `SELECT * FROM npc WHERE town_id = ${town_id}`
-                            //         )
-                            //         .then((dbRes) => {
+                            getNPC : (req,res) => {
+                                const { town_id } = req.params;
+                                sequelize
+                                    .query(
+                                        `SELECT * FROM npcs WHERE town_id = ${town_id}`
+                                    )
+                                    .then((dbRes) => {
                                         
-                            //             res.status(200).send(dbRes[0])
-                            //         })
-                            //         .catch((err) => console.log(err))
-                            //     }
+                                        res.status(200).send(dbRes[0])
+                                    })
+                                    .catch((err) => console.log(err))
+                                },
 
-}
+                                showNPC : (req,res) => {
+                                    const { npc_id } = req.params;
+                                    sequelize
+                                        .query(
+                                            `SELECT * FROM npcs WHERE npc_id = ${npc_id}`
+                                        )
+                                        .then((dbRes) => {
+                                            
+                                            res.status(200).send(dbRes[0])
+                                        })
+                                        .catch((err) => console.log(err))
+                                    }
+                                }
+
+
 
 
 

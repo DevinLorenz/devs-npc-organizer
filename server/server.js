@@ -4,7 +4,7 @@ const app = express();
 const path = require('path');
 
 const { seed } = require('./db');
-const { makeRealm, getRealms, makeRegion, getRegion, getAllRegion, addTown, getTown, getTownsRegion, makeNPC, getNPC } = require('./controller');
+const { makeRealm, getRealms, makeRegion, getRegion, getAllRegion, addTown, getTown, getTownsRegion, makeNPC, getNPC,showNPC } = require('./controller');
 
 app.use(express.static('public'));
 
@@ -30,7 +30,8 @@ app.get('/realm/getAllRegions', getAllRegion)
 app.post('/realm/region/town', addTown)
 app.get('/realm/region/town/:region_id', getTown)
 app.post('/realm/region/town/npc', makeNPC)
-
+app.get('/realm/region/town/npc/:town_id', getNPC)
+app.get('/realm/region/npc/:npc_id', showNPC)
 
 const PORT = process.env.PORT || 4523;
 
