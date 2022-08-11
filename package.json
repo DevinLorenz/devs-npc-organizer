@@ -5,7 +5,7 @@
   "main": "server.js",
   "scripts": {
     "test": "jest",
-    "start": "server.js"
+    "start": "server/server.js"
   },
   "keywords": [],
   "author": "",
