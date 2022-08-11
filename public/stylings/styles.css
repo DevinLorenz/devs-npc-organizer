@@ -540,7 +540,7 @@ body {
     align-items: flex-start;
 }
 
-.view-realm-button  {
+.view-realm-button {
     width: 100px;
     height: 40px;
     border: none;
@@ -565,7 +565,17 @@ body {
 } 
 
 
+.add-town-button {
+    width: 100px;
+    height: 40px;
+    border: none;
+    background-color: #1c1c1c;
+    color: #f9f9f9;
+}
 
+.add-town-button:hover {
+    background-color: rgb(108, 143, 233);
+} 
 
 
 
@@ -634,7 +644,70 @@ body {
     
 }
 
+#town {
+    border: none;
+    height: 39px;
+}
 
+#town-notes {
+    border: none;
+    min-height: 210px;
+    max-height: 210px;
+    max-width: 600px;
+    min-width: 600px;
+    line-height: normal;
+    font-size: small;
+    scrollbar-color: #1c1c1c;
+}
+
+.background-box-town {
+    font-size: large;
+    text-align: center;
+    padding-top: 5px;
+    background-color: #b3b3b3;
+    margin-top: 27px;
+    border: none;
+    min-height: 650px;
+    max-height: fit-content;
+}
+
+.town-info {
+    font-size: large;
+    text-align: center;
+    padding-top: -15px;
+    background-color: #b3b3b3;
+    padding-bottom: 60px;
+    margin-top: 27px;
+    margin-bottom: 60px;
+    height: 20px;
+}
+
+.town-text {
+
+    border-top: rgb(108, 143, 233) solid 50px;
+    
+    background-color: #d9d9d9;
+    margin-top: 10px;
+    margin-left: auto;
+    margin-right: auto;
+    padding: 65px;
+    max-width: 600px;
+    padding-top: -15px;
+    position: relative;
+    top: 15px;
+    
+}
+
+#town-box {
+    height: 5px;
+    background-color: #1c1c1c;
+    border: none;
+    margin-left: -65px;
+    margin-right: -65px;
+    position: relative;
+    top: -75px;
+    
+}
 
 
 
@@ -668,6 +741,14 @@ body {
     height: 50px;
     width: 45%;
     margin-left: -220px;
+    right: -40px;
+}
+
+#region-select-town {
+    border: none;
+    height: 50px;
+    width: 269px;
+    align-items: center;
     right: -40px;
 }
 
@@ -746,4 +827,152 @@ body {
     float: left;
     margin-left: 5%;
     
+}
+
+
+
+
+
+#npc {
+    border: none;
+    height: 39px;
+}
+
+.npc-name {
+    float: center;
+    position : relative;
+    top: -70px;
+}
+
+#npc-notes {
+    border: none;
+    min-height: 210px;
+    max-height: 210px;
+    max-width: 600px;
+    min-width: 600px;
+    line-height: normal;
+    font-size: small;
+    scrollbar-color: #1c1c1c;
+}
+
+.background-box-npc {
+    font-size: large;
+    text-align: center;
+    padding-top: 5px;
+    background-color: #b3b3b3;
+    margin-top: 27px;
+    border: none;
+    min-height: 720px;
+    max-height: fit-content;
+}
+
+.npc-info {
+    font-size: large;
+    text-align: center;
+    padding-top: -15px;
+    background-color: #b3b3b3;
+    padding-bottom: 60px;
+    margin-top: 27px;
+    margin-bottom: 60px;
+    height: 20px;
+}
+
+.npc-text {
+
+    border-top: rgb(108, 143, 233) solid 50px;
+    
+    background-color: #d9d9d9;
+    margin-top: 10px;
+    margin-left: auto;
+    margin-right: auto;
+    padding: 65px;
+    max-width: 600px;
+    padding-top: -15px;
+    position: relative;
+    top: 10px;
+    height: 500px;
+    z-index: 0;
+    padding-bottom: -20px;
+}
+
+#npc-box {
+    height: 5px;
+    background-color: #1c1c1c;
+    border: none;
+    margin-left: -65px;
+    margin-right: -65px;
+    position: relative;
+    top: -75px;
+    
+}
+
+
+
+
+.npcStatsList {
+    border: none;
+    float: right;
+    display: flex;
+    flex-direction: column;
+    /* flex-wrap: wrap; */
+    height: 50px;
+    width: 175px;
+    margin-bottom: 10px;
+    margin-left: 10px;
+    position: relative;
+    top: -20px;
+}
+
+.npcRaGeOc {
+    border: none;
+    float: left;
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    position: relative;
+    top: -20px;
+    
+}
+
+#npc-race {
+    width: 200px;
+    height: 52px;
+    border: none;
+    margin-bottom: 10px;
+}
+
+#npc-gender {
+    width: 200px;
+    height: 52px;
+    border: none;
+    margin-bottom: 10px;
+
+}
+
+#npc-occupation {
+    width: 200px;
+    height: 52px;
+    border: none;
+    margin-bottom: 10px;
+
+}
+
+
+#npc-name-randomize {
+    position: relative;
+    top: -70px;
+    border: none;
+    width: 335px;
+
+}
+
+
+#generate-npc {
+    width: 150px;
+    height: 52px;
+    border: none;
+    position: relative;
+    top: 150px;
+    margin-bottom: -50px;
+    z-index: 3;
 }

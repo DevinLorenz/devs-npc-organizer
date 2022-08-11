@@ -54,7 +54,99 @@ makeRealm : (req,res) => {
                     res.status(200).send(dbRes[0])
                 })
                 .catch((err) => console.log(err))
-            }
+            },
+
+            getRegion : (req,res) => {
+                const { realm_id } = req.params;
+                sequelize
+                    .query(
+                        `SELECT * FROM region WHERE realm_id = ${realm_id}`
+                    )
+                    .then((dbRes) => {
+                        
+                        res.status(200).send(dbRes[0])
+                    })
+                    .catch((err) => console.log(err))
+                },
+
+                getTownsRegion : (req,res) => {
+                    const { realm_id } = req.params;
+                    sequelize
+                        .query(
+                            `SELECT * FROM region WHERE realm_id = ${realm_id}`
+                        )
+                        .then((dbRes) => {
+                            res.status(200).send(dbRes[0])
+                        })
+                        .catch((err) => console.log(err))
+                    },
+
+                getAllRegion : (req,res) => {
+                    sequelize
+                        .query(
+                            `SELECT * FROM region`
+                        )
+                        .then((dbRes) => {
+                            
+                            res.status(200).send(dbRes[0])
+                        })
+                        .catch((err) => console.log(err))
+                    },
+
+
+                    addTown : (req,res) => {
+                        const { town_name, town_notes, region_id} = req.body;
+                        sequelize
+                            .query(
+                                `INSERT INTO town (town_name, town_notes, region_id) VALUES ('${town_name}', '${town_notes}', '${region_id}') RETURNING *`
+                            )
+                            .then((dbRes) => {
+                                
+                                res.status(200).send(dbRes[0])
+                            })
+                            .catch((err) => console.log(err))
+                        },
+                   
+
+                    getTown : (req,res) => {
+                        const { region_id } = req.params;
+                        sequelize
+                            .query(
+                                `SELECT * FROM town WHERE region_id = ${region_id}`
+                            )
+                            .then((dbRes) => {
+                                
+                                res.status(200).send(dbRes[0])
+                            })
+                            .catch((err) => console.log(err))
+                        },
+
+                        makeNPC : (req,res) => {
+                            const { npcfirstname, npclastname, npcrace, npcgender, npcoccupation,strength, dexterity, constitution, intelligence, wisdom, charisma, town_id } = req.body;
+                            sequelize
+                                .query(
+                                    `INSERT INTO npcs (npcfirstname, npclastname, npcrace, npcgender, npcoccupation,strength, dexterity, constitution, intelligence, wisdom, charisma, town_id) VALUES ('${npcfirstname}', '${npclastname}', '${npcrace}', '${npcgender}', '${npcoccupation}','${strength}', '${dexterity}', '${constitution}', '${intelligence}', '${wisdom}',
+                                   ' ${charisma}', '${town_id}') RETURNING *`
+                                )
+                                .then((dbRes) => {
+                                    
+                                    res.status(200).send(dbRes[0])
+                                })
+                                .catch((err) => console.log(err))
+                            },
+
+                            // getNPC : (req,res) => {
+                            //     const { town_id } = req.params;
+                            //     sequelize
+                            //         .query(
+                            //             `SELECT * FROM npc WHERE town_id = ${town_id}`
+                            //         )
+                            //         .then((dbRes) => {
+                                        
+                            //             res.status(200).send(dbRes[0])
+                            //         })
+                            //         .catch((err) => console.log(err))
+                            //     }
 
 }
 

@@ -4,11 +4,19 @@ const BASE_URL = 'http://localhost:4523'
 
 const addRegion = (realm_id) => {
     localStorage.setItem('realm_id', realm_id)
+    
     window.location = `./displays/create-region.html`
+}
+
+const addTown = (realm_id) => {
+    localStorage.setItem('realm_id', realm_id)
+
+    window.location = `./displays/create-town.html`
 }
 
 const viewRealm = (realm_id) => {
     localStorage.setItem('realm_id', realm_id)
+    
     window.location = `./viewRealm.html`
 }
 
@@ -24,6 +32,7 @@ const createRealmCard = (realm) => {
         </div>
         <button class="view-realm-button" onclick='viewRealm(${realm.realm_id})'>View Realm</button>
         <button class="add-region-button" onclick='addRegion(${realm.realm_id})'>Add Region</button>
+        <button class="add-town-button" onclick='addTown(${realm.realm_id})'>Add Town</button>
         
 <div>       
     `

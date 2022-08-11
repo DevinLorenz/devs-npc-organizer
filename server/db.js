@@ -59,19 +59,20 @@ drop table if exists realm;
             intelligence int,
             wisdom int,
             charisma int,
-            hitPoints int,
-            armorClass int,
-            proficiency varChar(255),
-            notes varchar(10000),
-            description varchar(2000),
-            background varchar(2000),
             town_id int not null references town(town_id)
-        );`
-        ).then(() => {
-            console.log('DB seeded!')
-            res.sendStatus(200)
-        }).catch(err => console.log('error seeding DB', err))
-    },
-
-
-}
+            );`
+            ).then(() => {
+                console.log('DB seeded!')
+                res.sendStatus(200)
+            }).catch(err => console.log('error seeding DB', err))
+        },
+        
+        
+    }
+    //npc not used:
+    // hitPoints int,
+    // armorClass int,
+    // proficiency varChar(255),
+    // notes varchar(10000),
+    // description varchar(2000),
+    // background varchar(2000),

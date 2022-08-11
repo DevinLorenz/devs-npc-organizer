@@ -38,18 +38,98 @@
                     </div>
                 </div>
             </header>
-            <div class="background-box-realm">
-                    <div class="realm-text">
-                <hr id="realm-box">
-                <form>
+            <div class="background-box-npc">
+                <div class="npc-text">
+            <hr id="npc-box">
+            <form>
+                <div class="npc-name">
                     
-                    <button type="submit" class="saveBtn">Create NPC</button>
+                    <input type="text" id="npc-firstName" name="npc-firstName" placeholder="NPC First Name">
+                    <input type="text" id="npc-lastName" name="npc-lastName" placeholder="NPC Last Name">
                     
-                    </form>
                 </div>
-            </div>
+                <button type="button" class="randomizeBtn" id="npc-name-randomize">Randomize</button>
+                <div>
+                    
+                    <div class="npcRaGeOc">
+                        
+                        <select type="dropdown" id="npc-race" ">
+                            <option class="races" id="racenull">--Select a Race--</option>
+                            <option class="races" id="race1">Human</option>
+                            <option class="races" id="race2">Elf</option>
+                            <option class="races" id="race3">Half-Elf</option>
+                            <option class="races" id="race4">Dwarf</option>
+                            <option class="races" id="race5">Orc</option>
+                            <option class="races" id="race6">Half-Orc</option>
+                            <option class="races" id="race7">Halfling</option>
+                            <option class="races" id="race8">Gnome</option>
+                            <option class="races" id="race9">Tiefling</option>   
+                        </select>        
+                        <!-- <button type="button" class="randomizeBtn" id="randomize-race">Randomize</button> -->
+                    
+                    <div>
+    
+                    <select type="dropdown" id="npc-gender">
+                        <option class="genders" id="gendernull">--Select a Gender--</option>
+                        <option class="genders" id="gender1">Non-Binary</option>
+                        <option class="genders" id="gender2">Male</option>
+                        <option class="genders" id="gender3">Female</option>                           
+                    </select>
+                        <!-- <button type="button" class="randomizeBtn" id="randomize-race">Randomize</button> -->
+                    </div>
 
+                    <div>
+                        <select type="dropdown" id="npc-occupation">
+                            <option class="occupations" id="occupationnull">--Select an Occupation--</option>
+                            
+                            <option class="occupations" id="occupation1">Town Guard</option>
+                            <option class="occupations" id="occupation2">Noble</option>
+                            <option class="occupations" id="occupation3">Priest</option>
+                            <option class="occupations" id="occupation4">Commoner</option>
+                            <option class="occupations" id="occupation5">Farmer</option>
+                            <option class="occupations" id="occupation6">Fisherman</option>
+                            <option class="occupations" id="occupation7">Entertainer</option>
+                            <option class="occupations" id="occupation8">Merchant</option>
+                            
+                        </select>
+                        <!-- <button type="button" class="randomizeBtn" id="randomize-occupation">Randomize</button> -->
+                    </div>
+                    </div>
+                </div>
+
+                <div id="add-stats-container">
+                    <input class="npcStatsList" id="npc-strength" type="text" placeholder="Enter Dexterity: (max 20)">
+                    <input class="npcStatsList" id="npc-dexterity" type="text" placeholder="Enter Strength: (max 20)">
+                    <input class="npcStatsList" id="npc-constitution" type="text" placeholder="Enter Intelligence: (max 20)">
+                    <input class="npcStatsList" id="npc-intelligence" type="text" placeholder="Enter Constitution: (max 20)">
+                    <input class="npcStatsList" id="npc-wisdom" type="text" placeholder="Enter Charisma: (max 20)">
+                    <input class="npcStatsList" id="npc-charisma" type="text" placeholder="Enter Wisdom: (max 20)">
+                </div>
+                <button type="submit" class="saveBtn" id="generate-npc">Create NPC</button>
+                </div>
+
+                
+            </form>
         </div>
-    </body>
+    </div>
+    
+    
+</div>
+<script src="https://cdn.jsdelivr.net/npm/axios/dist/axios.min.js"></script>
+<script src="../../scripts/region-generation.js"></script>
+</body>
+</html>         
+
+
+            
+                                
+
+
+</div>
+<script src="../../scripts/npc-generator.js"></script>
+</body>
 </html>
 
+
+
+<!-- <textarea id="region-notes" name="region-notes" placeholder="(optional) Notes about your Region"></textarea> -->

@@ -38,25 +38,34 @@
                     </div>
                 </div>
             </header>
-            <div class="background-box-realm">
-                    <div class="realm-text">
-                <hr id="realm-box">
+            <div class="background-box-town">
+                    <div class="town-text">
+                <hr id="town-box">
                 <form>
-                    <div class="realm-name">
+                    <div id="region-selector">
+                    <select id="region-select-town">
+                        <option value="selectRegionDrop">--Select Region--</option>
                         
-                        <input type="text" id="realm" name="realm-name" placeholder="Name your Town">
-                        <button type="button" class="randomizeBtn" id="realm-name-randomize">Randomize</button>
+                        
+                    </select>
+            </div>
+                    <div class="town-name">
+                        
+                        <input type="text" id="town" name="town-name" placeholder="Name your Town">
+                        <button type="button" class="randomizeBtn" id="town-name-randomize">Randomize</button>
                     </div>
                     <div>
                         
-                        <textarea id="realm-notes" name="realm-notes" placeholder="(optional) Notes about your Town"></textarea>
+                        <textarea id="town-notes" name="town-notes" placeholder="(optional) Notes about your Town"></textarea>
                     </div>
-                    <button type="submit" class="saveBtn">Create Town</button>
+                    <button type="submit" id="generate-town" class="saveBtn">Create Town</button>
                     
                     </form>
                 </div>
             </div>
-
+            <script src="https://cdn.jsdelivr.net/npm/axios/dist/axios.min.js"></script>
+            
+            <script src="../../scripts/town-generator.js"></script>
         </div>
     </body>
 </html>
