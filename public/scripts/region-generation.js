@@ -1,4 +1,4 @@
-const BASE_URL = 'https://devsnpc.com';
+const BASE_URL = 'https://devno.herokuapp.com';
 
 let makeRegion = document.querySelector('#generate-region')
 

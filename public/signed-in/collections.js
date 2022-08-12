@@ -1,6 +1,6 @@
 let getRealms = document.querySelector('#collections-button')
 
-const BASE_URL = 'https://devsnpc.com'
+const BASE_URL = 'https://devno.herokuapp.com'
 
 const addRegion = (realm_id) => {
     localStorage.setItem('realm_id', realm_id)
