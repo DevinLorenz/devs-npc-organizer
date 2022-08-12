@@ -19,7 +19,7 @@ makeRealm : (req,res) => {
     const { realm_name, realm_notes} = req.body;
     sequelize
         .query(
-            `INSERT INTO realm (realm_name, realm_notes) VALUES (``${realm_name}`, `${realm_notes}``)`
+            `INSERT INTO realm (realm_name, realm_notes) VALUES (${realm_name}`, `${realm_notes})`
         )
         .then((dbRes) => {
             
@@ -47,7 +47,7 @@ makeRealm : (req,res) => {
             const { region_name, region_notes, realm_id} = req.body;
             sequelize
                 .query(
-                    `INSERT INTO region (region_name, region_notes, realm_id) VALUES (``${region_name}`, `${region_notes}`, `${realm_id}``) RETURNING *`
+                    `INSERT INTO region (region_name, region_notes, realm_id) VALUES (${region_name}`, `${region_notes}`, `${realm_id}) RETURNING *`
                 )
                 .then((dbRes) => {
                     
@@ -98,7 +98,7 @@ makeRealm : (req,res) => {
                         const { town_name, town_notes, region_id} = req.body;
                         sequelize
                             .query(
-                                `INSERT INTO town (town_name, town_notes, region_id) VALUES (``${town_name}`, `${town_notes}`, `${region_id}``) RETURNING *`
+                                `INSERT INTO town (town_name, town_notes, region_id) VALUES (${town_name}`, `${town_notes}`, `${region_id}) RETURNING *`
                             )
                             .then((dbRes) => {
                                 
@@ -125,7 +125,7 @@ makeRealm : (req,res) => {
                             const { npcfirstname, npclastname, npcrace, npcgender, npcoccupation,strength, dexterity, constitution, intelligence, wisdom, charisma, town_id } = req.body;
                             sequelize
                                 .query(
-                                    `INSERT INTO npcs (npcfirstname, npclastname, npcrace, npcgender, npcoccupation,strength, dexterity, constitution, intelligence, wisdom, charisma, town_id) VALUES (``${npcfirstname}`, `${npclastname}`, `${npcrace}`, `${npcgender}`, `${npcoccupation}`,`${strength}`, `${dexterity}`, `${constitution}`, `${intelligence}`, `${wisdom}`,`${charisma}`, `${town_id}``) RETURNING *`
+                                    `INSERT INTO npcs (npcfirstname, npclastname, npcrace, npcgender, npcoccupation,strength, dexterity, constitution, intelligence, wisdom, charisma, town_id) VALUES (${npcfirstname}`, `${npclastname}`, `${npcrace}`, `${npcgender}`, `${npcoccupation}`,`${strength}`, `${dexterity}`, `${constitution}`, `${intelligence}`, `${wisdom}`,`${charisma}`, `${town_id}) RETURNING *`
                                 )
                                 .then((dbRes) => {
                                     
