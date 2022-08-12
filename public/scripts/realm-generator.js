@@ -1,4 +1,4 @@
-const BASE_URL = 'http://localhost:4523'
+const BASE_URL = 'https://devsnpc.com'
 
 let makeRealm = document.querySelector('#generate-realm')
 let getRealms = document.querySelector('#collections-button')

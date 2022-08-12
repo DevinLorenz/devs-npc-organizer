@@ -1,4 +1,4 @@
-const BASE_URL = 'http://localhost:4523';
+const BASE_URL = 'https://devsnpc.com';
 
 let makeRegion = document.querySelector('#generate-region')
 

@@ -1,4 +1,4 @@
-let BASED_URL = 'http://localhost:4523';
+let BASED_URL = 'https://devsnpc.com';
 let topDropDown = document.querySelector('#town-select')
 let generateNPC = document.querySelector('#generate-npc')
 region_name = localStorage.getItem('region_name')

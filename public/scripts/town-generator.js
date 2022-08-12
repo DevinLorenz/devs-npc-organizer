@@ -1,4 +1,4 @@
-const BASE_URL = 'http://localhost:4523';
+const BASE_URL = 'https://devsnpc.com';
 let dropDown = document.querySelector('#region-select-town')
 let generateTown = document.querySelector('#generate-town')
 realm_name = localStorage.getItem('realm_name')

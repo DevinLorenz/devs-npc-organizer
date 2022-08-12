@@ -1,6 +1,6 @@
 let getRealms = document.querySelector('#collections-button')
 
-const BASE_URL = 'http://localhost:4523'
+const BASE_URL = 'https://devsnpc.com'
 
 const addRegion = (realm_id) => {
     localStorage.setItem('realm_id', realm_id)
